@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JDI Info</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {     
+                font-family: 'Courier New', Courier, monospace;   
+            }
+
+            .separator {
+                width: 100%;
+                height: 1px;
+                background-color: #ddd;
+                margin: 20px 0;
+            }
+
+            .content-section {
+                display: flex;
+                justify-content: space-between;
+                max-width: 1200px;
+                margin: 20px auto;
+                gap: 20px;
+            }
+
+            .content-box {
+                flex: 1;
+                padding: 20px;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                background-color: #f9f9f9;
+            }
+
+            .content-box h2 {
+                font-size: 1.5em;
+                color: #333;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+
+            .content-box p {
+                line-height: 1.6;
+                color: #555;
+                margin-bottom: 15px;
+                text-align: justify;
+            }
+
+            .content-box a {
+                display: block;
+                text-align: center;
+                color: #007bff;
+                text-decoration: none;
+                font-weight: bold;
+                margin-top: 10px;
+                transition: color 0.3s;
+            }
+
+            .content-box a:hover {
+                color: #0056b3;
+            }
+
+            /* Estilo do formulário de contato */
+            .contact-section {
+                max-width: 1000px;
+                margin: 40px auto;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .contact-section h2 {
+                font-size: 2em;
+                margin-bottom: 10px;
+                color: #333;
+            }
+
+            .contact-section .separator {
+                width: 50px;
+                height: 3px;
+                background-color: #0056b3;
+                margin: 10px auto;
+                border-radius: 2px;
+            }
+
+            .contact-info {
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 30px;
+            }
+
+            .contact-info div {
+                text-align: center;
+                flex: 1;
+                padding: 10px;
+            }
+
+            .contact-info div img {
+                width: 40px;
+                height: 40px;
+                margin-bottom: 10px;
+            }
+
+            .contact-info h3 {
+                font-size: 1.2em;
+                margin: 5px 0;
+                color: #333;
+            }
+
+            .contact-info p {
+                font-size: 0.9em;
+                color: #555;
+            }
+
+            .contact-form {
+                background-color: #ffffff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            .contact-form h2 {
+                color: #333;
+                font-size: 1.8em;
+                margin-bottom: 10px;
+            }
+
+            .contact-form .form-row {
+                display: flex;
+                gap: 20px;
+            }
+
+            .contact-form .form-row div {
+                flex: 1;
+            }
+
+            .contact-form label {
+                display: block;
+                font-size: 0.9em;
+                margin-bottom: 5px;
+                color: #555;
+            }
+
+            .contact-form input,
+            .contact-form textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                font-size: 0.9em;
+            }
+
+            .contact-form textarea {
+                height: 150px;
+            }
+
+            .contact-form button {
+                background-color: #0056b3;
+                color: #fff;
+                border: none;
+                padding: 10px 15px;
+                font-size: 1em;
+                border-radius: 4px;
+                cursor: pointer;
+                width: 100%;
+            }
+
+            .contact-form button:hover {
+                background-color: #004494;
+            }
+
+            .privacy {
+                font-size: 0.8em;
+                color: #777;
+                margin-top: 15px;
+            }
+
+            .privacy a {
+                color: #0056b3;
+                text-decoration: none;
+            }
+
+            .privacy a:hover {
+                text-decoration: underline;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <div class="header-top">
+                    <div class="logo">
+                        <img src="./image/logo.webp" alt="Logo Trier Sistemas" width="100">
+                    </div>
+                    <div id="loginButton">
+                        <a>Login</a>
+                    </div>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="./index.html">
+                                HOME
+                            </a>
+                        </li>
+
+                        <li class="has-submenu">EMPRESA
+                            <ul class="submenu">
+                                <li>
+                                    <a href="./conheca-jdi.html">
+                                        Conheça a JDI
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./solucoes.html">
+                                        Soluções
+                                    </a>                                    
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="./contato.html">
+                                CONTATO
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./localizacao.html">
+                                LOCALIZAÇÃO
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="hero-section">
+                <img src="./image/main.png" alt="Produtos de Tecnologia" class="hero-image"> 
+            </div>
+
+            <div class="separator"></div>
+
+            <!-- Seção de Contato e Formulário -->
+            <div class="contact-section">
+                <h2>CONTATO</h2>
+                <div class="separator"></div>
+
+                <div class="contact-info">
+                    <div>
+                        <h3>Telefone</h3>
+                        <p>(41) 3333-3333</p>
+                    </div>
+                    <div>
+                        <h3>Endereço</h3>
+                        <p>Praça Gen. Osório, 125<br>Centro, Curitiba - PR</p>
+                    </div>
+                    <div>
+                        <h3>E-mail</h3>
+                        <p>contato@jdinfo.com.br</p>
+                    </div>
+                </div>
+
+                <h2>DEIXE UMA MENSAGEM</h2>
+                <div class="separator"></div>
+
+                <div class="contact-form">
+                    <form action="mailto:contato@jdinfo.com.br" method="post" enctype="text/plain">
+                        <div class="form-row">
+                            <div>
+                                <label for="name">Nome *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div>
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div>
+                                <label for="subject">Assunto</label>
+                                <input type="text" id="subject" name="subject">
+                            </div>
+                            <div>
+                                <label for="phone">Telefone *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <label for="message">Mensagem *</label>
+                        <textarea id="message" name="message" required></textarea>
+
+                        <button type="submit">Enviar Mensagem</button>
+                    </form>
+                    <p class="privacy">Ao utilizar esse formulário, você concorda com a nossa política de privacidade. <br><a href="#">Clique aqui para ler.</a></p>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer>
+                <div class="footer-left">
+                    <ul>
+                        <li><a href="#"><img src="./image/facebook.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="./image/instagram.png" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="./image/linkedin.png" alt="LinkedIn"></a></li>
+                        <li><a href="#"><img src="./image/twitter.png" alt="Twitter"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <p>FALE CONOSCO</p>
+                    <ul>
+                        <li>(41) 9999-9999</li>
+                        <li>(41) 8888-8888</li>
+                        <li>(41) 3333-3333</li>
+                    </ul>
+                    <a href="mailto:jdiinfo@gmail.com">jdiinfo@gmail.com</a>
+
+                    <a>Endereço: Praça Gen. Osório, 125<br> Centro, Curitiba - PR, 80020-010</a>
+                </div>
+            </footer>
+        </div>
+        
+        <!-- Popup para login -->
+        <div id="loginPopup" class="popup">
+            <div class="popup-content">
+                <span class="close-button" onclick="closePopup()">×</span>
+                <h2>Login</h2>
+                <form>
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Entrar</button>
+                </form>
+                <div class="popup-links">
+                    <a href="#">Esqueci minha senha</a>
+                    <span>|</span>
+                    <a href="#">Cadastrar-se</a>
+                </div>
+            </div>
+        </div>
+        <script src="./js/script.js"></script>
+    </body>
+</html>

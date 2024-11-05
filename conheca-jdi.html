@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JDI Info</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {     
+                font-family: 'Courier New', Courier, monospace;   
+            }
+
+            .jdi-article {
+                width: 100%;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .jdi-article h2 {
+                font-size: 1.8em;
+                margin-bottom: 10px;
+                color: #333;
+            }
+
+            .jdi-article p {
+                text-align: justify;
+                line-height: 1.6;
+                color: #555;
+                margin-bottom: 15px;
+            }
+
+            .highlight {
+                font-size: 1.1em;
+                color: #007bff;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <div class="header-top">
+                    <div class="logo">
+                        <img src="./image/logo.webp" alt="Logo Trier Sistemas" width="100">
+                    </div>
+                    <div id="loginButton">
+                        <a>Login</a>
+                    </div>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="./index.html">
+                                HOME
+                            </a>
+                        </li>
+
+                        <li class="has-submenu">EMPRESA
+                            <ul class="submenu">
+                                <li>
+                                    <a href="./conheca-jdi.html">
+                                        Conheça a JDI
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./solucoes.html">
+                                        Soluções
+                                    </a>                                    
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="./contato.html">
+                                CONTATO
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./localizacao.html">
+                                LOCALIZAÇÃO
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="hero-section">
+                <img src="./image/main.png" alt="Produtos de Tecnologia" class="hero-image"> 
+            </div>
+
+            <div class="separator"></div>
+
+            <article class="jdi-article">
+                <h2>Conheça a JDI</h2>
+                <p class="highlight">Excelência em Tecnologia e Inovação para o Futuro!</p>
+                <p>A JDI é uma empresa de tecnologia que atua no mercado desde 2005. Nossa missão é fornecer soluções tecnológicas para empresas de todos os portes, com foco em inovação e qualidade. Contamos com uma equipe de profissionais altamente qualificados e experientes, prontos para atender às necessidades de nossos clientes.</p>
+                <p>Oferecemos uma ampla gama de produtos e serviços, incluindo sistemas de gestão empresarial, soluções de segurança da informação, consultoria em TI, entre outros. Trabalhamos com as principais marcas do mercado, garantindo a qualidade e a confiabilidade de nossos produtos.</p>
+                <p>Além disso, a JDI está sempre em busca de parcerias com empresas e profissionais da área de tecnologia, visando o desenvolvimento de soluções inovadoras e a expansão de nossos negócios. Se você deseja fazer parte da nossa equipe ou se tornar um parceiro da JDI, entre em contato conosco e saiba mais sobre as oportunidades disponíveis.</p>
+                <p class="highlight">Na JDI, acreditamos que a tecnologia é o caminho para transformar o mundo e impulsionar negócios rumo ao sucesso. Venha crescer conosco e faça parte dessa jornada de inovação!</p>
+            </article>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-left">
+                <ul>
+                    <li><a href="#"><img src="./image/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="./image/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="./image/linkedin.png" alt="LinkedIn"></a></li>
+                    <li><a href="#"><img src="./image/twitter.png" alt="Twitter"></a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <p>FALE CONOSCO</p>
+                <ul>
+                    <li>(41) 9999-9999</li>
+                    <li>(41) 8888-8888</li>
+                    <li>(41) 3333-3333</li>
+                </ul>
+                <a href="mailto:jdiinfo@gmail.com">jdiinfo@gmail.com</a>
+
+                <a>Endereço: Praça Gen. Osório, 125<br> Centro, Curitiba - PR, 80020-010</a>
+            </div>
+        </footer>
+        
+        <!-- Popup para login -->
+        <div id="loginPopup" class="popup">
+            <div class="popup-content">
+                <span class="close-button" onclick="closePopup()">×</span>
+                <h2>Login</h2>
+                <form>
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Entrar</button>
+                </form>
+                <div class="popup-links">
+                    <a href="#">Esqueci minha senha</a>
+                    <span>|</span>
+                    <a href="#">Cadastrar-se</a>
+                </div>
+            </div>
+        </div>
+        <script src="./js/script.js"></script>
+    </body>
+</html>

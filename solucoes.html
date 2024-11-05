@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JDI Info</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {     
+                font-family: 'Courier New', Courier, monospace;   
+            }
+
+            .jdi-article {
+                width: 100%;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .jdi-article h2 {
+                font-size: 1.8em;
+                margin-bottom: 10px;
+                color: #333;
+            }
+
+            .jdi-article p {
+                text-align: justify;
+                line-height: 1.6;
+                color: #555;
+                margin-bottom: 15px;
+            }
+
+            .highlight {
+                font-size: 1.1em;
+                color: #007bff;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <div class="header-top">
+                    <div class="logo">
+                        <img src="./image/logo.webp" alt="Logo Trier Sistemas" width="100">
+                    </div>
+                    <div id="loginButton">
+                        <a>Login</a>
+                    </div>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="./index.html">
+                                HOME
+                            </a>
+                        </li>
+
+                        <li class="has-submenu">EMPRESA
+                            <ul class="submenu">
+                                <li>
+                                    <a href="./conheca-jdi.html">
+                                        Conheça a JDI
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./solucoes.html">
+                                        Soluções
+                                    </a>                                    
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="./contato.html">
+                                CONTATO
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./localizacao.html">
+                                LOCALIZAÇÃO
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="hero-section">
+                <img src="./image/main.png" alt="Produtos de Tecnologia" class="hero-image"> 
+            </div>
+
+            <div class="separator"></div>
+
+            <article class="jdi-article">
+                <h2>Nossas Soluções</h2>
+                <p class="highlight">Tecnologia de Ponta para Impulsionar o Sucesso do Seu Negócio!</p>
+                <p>Na JDI, desenvolvemos soluções que transformam a maneira como nossos clientes gerenciam e expandem seus negócios. Com anos de experiência e um compromisso inabalável com a inovação, oferecemos uma linha completa de produtos e serviços de tecnologia que atendem às necessidades mais exigentes do mercado atual.</p>
+                
+                <p><strong>Sistemas de Gestão Empresarial:</strong> Nossos sistemas integrados permitem o controle total de operações, finanças e recursos humanos, proporcionando uma visão completa e precisa do seu negócio. Soluções flexíveis e escaláveis que se adaptam ao crescimento da sua empresa.</p>
+
+                <p><strong>Soluções de Segurança da Informação:</strong> Proteja seus dados e a privacidade de seus clientes com nossas soluções avançadas de segurança digital. Oferecemos firewall, backup automatizado, criptografia e monitoramento em tempo real para garantir que suas informações estejam sempre seguras.</p>
+
+                <p><strong>Consultoria em TI:</strong> Nossa equipe de especialistas está preparada para oferecer consultoria personalizada, ajudando sua empresa a adotar as melhores práticas em tecnologia. Com análise estratégica e planejamento de TI, trabalhamos para aumentar a eficiência e reduzir custos operacionais.</p>
+
+                <p><strong>Desenvolvimento de Software Personalizado:</strong> Criamos soluções de software sob medida, adaptadas às necessidades específicas de cada cliente. Desde aplicativos móveis até sistemas complexos de gestão, nossos produtos são projetados para oferecer desempenho e usabilidade excepcionais.</p>
+
+                <p class="highlight">Junte-se à JDI e descubra como nossas soluções podem transformar o seu negócio. Estamos prontos para levar sua empresa ao próximo nível com tecnologia de alto impacto!</p>
+            </article>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-left">
+                <ul>
+                    <li><a href="#"><img src="./image/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="./image/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="./image/linkedin.png" alt="LinkedIn"></a></li>
+                    <li><a href="#"><img src="./image/twitter.png" alt="Twitter"></a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <p>FALE CONOSCO</p>
+                <ul>
+                    <li>(41) 9999-9999</li>
+                    <li>(41) 8888-8888</li>
+                    <li>(41) 3333-3333</li>
+                </ul>
+                <a href="mailto:jdiinfo@gmail.com">jdiinfo@gmail.com</a>
+
+                <a>Endereço: Praça Gen. Osório, 125<br> Centro, Curitiba - PR, 80020-010</a>
+            </div>
+        </footer>
+        
+        <!-- Popup para login -->
+        <div id="loginPopup" class="popup">
+            <div class="popup-content">
+                <span class="close-button" onclick="closePopup()">×</span>
+                <h2>Login</h2>
+                <form>
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Entrar</button>
+                </form>
+                <div class="popup-links">
+                    <a href="#">Esqueci minha senha</a>
+                    <span>|</span>
+                    <a href="#">Cadastrar-se</a>
+                </div>
+            </div>
+        </div>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
